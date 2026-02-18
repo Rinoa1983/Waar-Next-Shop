@@ -1,5 +1,15 @@
 $danger: #ce39ed;
+$primary: #ffc01f;
 
-
+:root {
+    --gradient: linear-gradient(90deg,
+            rgb(227,6,19),
+            rgb(241,136,21),
+            rgb(255,237,0),
+            rgb(2,129,55),
+            rgb(46,87,164),
+            rgb(110,35,129)
+            );
+}
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss"

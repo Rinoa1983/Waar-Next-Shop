@@ -1,4 +1,4 @@
-import jsondb from "../jsondb/produkte";
+import jsondb from "../jsondb/products";
 import { Card, Button } from "react-bootstrap";
 import Link from "next/link";
 
@@ -6,30 +6,32 @@ export default function ProductList() {
   return (
     <div className="">
       <div className="row row-cols-3">
-        {jsondb.produkte.map((produkt) => (
-          <div key={produkt.name} className="mt-3 col">
-            <Card className="min-h-200">
+        {jsondb.products.map((product) => (
+          <div key={product.name} className="mt-3 col">
+            <Card className="mb-3 min-h-200">
               <Link
-                href={`/produkte/${produkt.url}`}
+                href={`/products/${product.url}`}
                 passHref
                 className="text-decoration-none text-black"
               >
-                <Card.Img variant="top" src={produkt.picture} />
+                <Card.Img variant="top" src={product.picture} className="h-full w-full object-cover"/>
               </Link>
+              <div className="grow">
               <Card.Body>
                 <Link
-                  href={`/produkte/${produkt.url}`}
+                  href={`/products/${product.url}`}
                   passHref
                   className="text-decoration-none text-black"
                 >
-                  <Card.Title className="fw-bold">{produkt.name}</Card.Title>
+                  <Card.Title className="fw-bold">{product.name}</Card.Title>
                   <Card.Title className="fw-semibold">
-                    {produkt.price} €
+                    {product.price} €
                   </Card.Title>
-                  <Card.Text>{produkt.definition}</Card.Text>
+                  <Card.Text>{product.definition}</Card.Text>
                 </Link>
                 <Button variant="danger text-white mt-3">zum Warenkorb</Button>
               </Card.Body>
+              </div>
             </Card>
           </div>
         ))}

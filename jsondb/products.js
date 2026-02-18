@@ -1,5 +1,5 @@
 const jsondb = {
-    produkte: [
+    products: [
         {
         name: "PlayStation 5",
         definition: "Sonys Konsole 1TB",
