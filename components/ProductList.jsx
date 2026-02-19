@@ -27,7 +27,7 @@ export default function ProductList() {
             {/* Body*/}
             <div className="flex flex-1 flex-col p-5">
               <div className="flex-1">
-                <div className="flex items-start justify-between gap-2">
+                <div className="flex flex-col items-start justify-between gap-2">
                   <h3 className="text-sm font-bold tracking-tight text-slate-900 dark:text-white line-clamp-1 ">
                     {product.name}
                   </h3>

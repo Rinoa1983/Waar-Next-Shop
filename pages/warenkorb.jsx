@@ -35,7 +35,9 @@ export default function Warenkorb() {
                 <td>1</td>
                 <td>1,99</td>
                 <td>
-                  <Button className="btn-sm">X</Button>
+                  <Button className="btn-sm">
+                    <Image src="/pictures/trashcan.png" alt="Mülleimer" width={15} height={15}/>
+                  </Button>
                 </td>
               </tr>
               <tr>
@@ -52,7 +54,9 @@ export default function Warenkorb() {
                 <td>1</td>
                 <td>5,99</td>
                 <td>
-                  <Button className="btn-sm">X</Button>
+                  <Button className="btn-sm">
+                    <Image src="/pictures/trashcan.png" alt="Mülleimer" width={15} height={15}/>
+                  </Button>
                 </td>
               </tr>
             </tbody>

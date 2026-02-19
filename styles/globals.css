@@ -3,3 +3,30 @@
 @import "tailwindcss";
 
 
+/* Rainbow Utility */
+@layer utilities {
+  .bg-rainbow {
+    --gradient: linear-gradient(
+      90deg,
+      rgb(227, 6, 19),
+      rgb(241, 136, 21),
+      rgb(255, 237, 0),
+      rgb(2, 129, 55),
+      rgb(46, 87, 164),
+      rgb(110, 35, 129)
+    );
+
+    background: var(--gradient);
+    background-size: 400%;
+    animation: bg-animation 120s ease-in-out infinite alternate;
+  }
+}
+
+@keyframes bg-animation {
+  0% {
+    background-position: left;
+  }
+  100% {
+    background-position: right;
+  }
+}
